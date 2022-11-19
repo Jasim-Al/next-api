@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 export default function Home() {
   const emailRef = useRef();
   const feedbackRef = useRef();
-  const [feedbacks, setFeedbacks] = useState(null);
+  const [feedbacks, setFeedbacks] = useState([]);
 
   function handleFormSubmit(event) {
     event.preventDefault();
